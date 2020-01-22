@@ -1,32 +1,36 @@
 ﻿@model OnlineShop.Models.ProductTypes
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Edit";
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/site.css" />
 
-<h1>Create</h1>
+
+<h1>Edit</h1>
 
 <h4>ProductTypes</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-controller="ProductType" asp-action="Create" method="post">
+        <form asp-controller="ProductType" asp-action="Edit" method="post">
             @Html.AntiForgeryToken()
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" hidden />
+                <input asp-for="Id" class="form-control" hidden/>
                 <span asp-validation-for="Id" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="ProductTpe" class="control-label"></label>
-                <input asp-for="ProductTpe" class="form-control" />
+              
+                
+                <input asp-for="ProductTpe"  value="@Html.DisplayFor(models => models.ProductTpe)" class="form-control" />
+                
                 <span asp-validation-for="ProductTpe" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
@@ -35,24 +39,8 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
 <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
-
-<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
-<script type="text/javascript">
-
-    $(function){
-        var save = '@TempData["save"]'
-        if (save == null) {
-            alertify.success(save);
-        }
-    }
-
-
-</script>
-
-

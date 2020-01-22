@@ -5,6 +5,7 @@
 }
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/site.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
 
 <h1>Index</h1>
 
@@ -35,11 +36,23 @@
                     @Html.DisplayFor(modelItem => item.ProductTpe)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey*/  }, new { @class = "btn btn-primary btn-large" })
-                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-info" })
-                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ }, new { @class = "btn btn-danger" })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary btn-large" })
+                    @Html.ActionLink("Details", "Details", new {  id=item.Id }, new { @class = "btn btn-info" })
+                    @Html.ActionLink("Delete", "Delete", new {  id=item.Id }, new { @class = "btn btn-danger" })
                 </td>
             </tr>
         }
     </tbody>
 </table>
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+<script type="text/javascript">
+
+    $(function){
+        var save = '@TempData["save"]'
+        if (save == null) {
+            alertify.success(save);
+        }
+    }
+
+
+</script>

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<OnlineShop.Models.SpecialTags>
+@{
+    ViewData["Title"] = "TagList";
+}
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" />
+<h1>TagList</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialTag)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.Id)
+                </td>
+                <td>
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.SpecialTag)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -159,3 +159,8 @@ C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Customer\V
 C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ProductType\Index.cshtml.g.cs
 C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ProductType\Create.cshtml.g.cs
 C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_buttonPartial.cshtml.g.cs
+C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ProductType\Edit.cshtml.g.cs
+C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ProductType\Details.cshtml.g.cs
+C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\ProductType\Delete.cshtml.g.cs
+C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\SpecialTag\TagList.cshtml.g.cs
+C:\Users\Maruf\Desktop\OnlineShop\obj\Debug\netcoreapp3.1\Razor\Areas\Admin\Views\Product\Index.cshtml.g.cs
