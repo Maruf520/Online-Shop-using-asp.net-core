@@ -24,6 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "OnlineShop/1.0.0": {
         "dependencies": {
+          "EO.Pdf": "20.0.25",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.1",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.1",
           "Microsoft.AspNetCore.Identity.UI": "3.1.1",
@@ -302,6 +303,32 @@
         },
         "compile": {
           "OnlineShop.dll": {}
+        }
+      },
+      "EO.Pdf/20.0.25": {
+        "runtime": {
+          "lib/EO.Base.dll": {
+            "assemblyVersion": "20.0.25.0",
+            "fileVersion": "20.0.25.0"
+          },
+          "lib/EO.Pdf.dll": {
+            "assemblyVersion": "20.0.25.0",
+            "fileVersion": "20.0.25.0"
+          },
+          "lib/EO.WebBrowser.dll": {
+            "assemblyVersion": "20.0.25.0",
+            "fileVersion": "20.0.25.0"
+          },
+          "lib/EO.WebEngine.dll": {
+            "assemblyVersion": "20.0.25.0",
+            "fileVersion": "20.0.25.0"
+          }
+        },
+        "compile": {
+          "lib/EO.Base.dll": {},
+          "lib/EO.Pdf.dll": {},
+          "lib/EO.WebBrowser.dll": {},
+          "lib/EO.WebEngine.dll": {}
         }
       },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.1": {
@@ -3854,6 +3881,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "EO.Pdf/20.0.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TUO4t6Dy6qzFJKQmwQY4G9kHaUqsLbHE2g33BmOy08CS5BkR8zPVbzdS7KDKKCpF8JQdBnR6M08heS3JbuKOSw==",
+      "path": "eo.pdf/20.0.25",
+      "hashPath": "eo.pdf.20.0.25.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.1": {
       "type": "package",
